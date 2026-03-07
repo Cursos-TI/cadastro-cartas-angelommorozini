@@ -65,4 +65,26 @@ int main() {
 
     printf("Digite números de pontos turisticos: ");
     scanf("%d", &pontos_2);
+  //--- CÁLCULOS ---
+    float densidade_1 = populacao_1 / area_1;
+    float densidade_2 = populacao_2 / area_2;
+
+    float pib_per_capita_1 = pib_1 / populacao_1;
+    float pib_per_capita_2 = pib_2 / populacao_2;
+
+//--- RESULTADOS ---
+
+printf("\n--- RESULTADOS CARTA 1 ---\n");
+printf("Estado: %s\n", estado_1);
+printf("Cidade: %s\n", cidade_1);
+printf("Densidade populacional: %.2f habitantes/km²\n", densidade_1);
+printf("PIB per capita: %.2f\n", pib_per_capita_1);
+
+printf("\n--- RESULTADOS CARTA 2 ---\n");
+printf("Estado: %s\n", estado_2);
+printf("Cidade: %s\n", cidade_2);
+printf("Densidade populacional: %.2f habitantes/km²\n", densidade_2);
+printf("PIB per capita: %.2f/n", pib_per_capita_2);
+
+return 0;
 } 
